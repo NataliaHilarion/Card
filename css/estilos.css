@@ -1,0 +1,104 @@
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--Dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+  Font-size: 18px;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left -33% top 210%, right -35% top -135%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+}
+
+.card {
+  max-inline-size: 347px;
+  background-color: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 1px 1px 7px var(--Very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.card-header {
+  max-inline-size: 100%;
+}
+.card-body {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-border-after: 0.9px solid rgb(220, 218, 218);
+          border-block-end: 0.9px solid rgb(220, 218, 218);
+}
+.card-body-img {
+  border-radius: 50%;
+  -webkit-margin-before: -50px;
+          margin-block-start: -50px;
+  border: none;
+  background-color: var(--white);
+  border: 5px solid var(--white);
+}
+.card-body-text {
+  font-size: 20px;
+  -webkit-margin-before: 18px;
+          margin-block-start: 18px;
+  color: var(--Very-dark-blue);
+}
+.card-body-text span {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  -webkit-margin-start: 4px;
+          margin-inline-start: 4px;
+}
+.card-body h2 {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+}
+.card-footer {
+  inline-size: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.card-footer-social {
+  font-size: 12px;
+  text-align: center;
+}
+.card-footer-social h3 {
+  -webkit-margin-after: 3px;
+          margin-block-end: 3px;
+  font-size: 16px;
+}
+.card-footer-social p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=estilos.css.map */
